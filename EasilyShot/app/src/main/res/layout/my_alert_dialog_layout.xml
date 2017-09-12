@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/boder_alert"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp">
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="提示"
+                android:textColor="#333333"
+                android:textSize="17sp"/>
+
+            <View
+                style="@style/cutline_horizontal"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tip_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_layout"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="确定退出系统吗"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+
+        <View
+            android:id="@+id/split_line"
+            style="@style/cutline_horizontal"
+            android:layout_below="@+id/tip_msg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/split_line"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_frist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alert_button_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:visibility="visible"/>
+
+            <View
+                android:id="@+id/middle_line"
+                style="@style/cutline_vertical"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bt_second"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alert_button_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/middle_line_tow"
+                style="@style/cutline_vertical"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bt_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/alert_button_selector"
+                android:gravity="center"
+                android:text="中立"
+                android:textColor="#333333"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

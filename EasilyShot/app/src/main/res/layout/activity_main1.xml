@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="完善资料"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip"
+        android:layout_centerInParent="true">
+
+        <EditText
+
+            android:id="@+id/login_phone_input"
+            style="@style/user_login_input_style"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:hint="手机号"
+            android:inputType="phone" />
+
+        <View
+            style="@style/cutline_horizontal"
+            android:layout_below="@+id/login_phone_input"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp" />
+
+        <EditText
+            android:id="@+id/user_input"
+            style="@style/user_login_input_style"
+            android:layout_alignEnd="@+id/login_phone_input"
+            android:layout_alignRight="@+id/login_phone_input"
+            android:layout_below="@+id/login_phone_input"
+            android:hint="用户名" />
+
+        <View
+            style="@style/cutline_horizontal"
+            android:layout_below="@+id/user_input"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp" />
+
+        <TextView
+            android:id="@+id/tv_get_info"
+            style="@style/yellow_round_btn_style"
+            android:layout_below="@id/user_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_select_tag"
+            android:text="下一步"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_show_info"
+            style="@style/yellow_round_btn_style"
+            android:layout_below="@id/user_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_select_tag"
+            android:text="下一步"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
